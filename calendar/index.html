@@ -1,0 +1,69 @@
+<!--	
+ 	Created by liubh on 2017/8/14.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<!--移动端： 禁止了把数字转化为拨号链接-->
+		<meta content="telephone=no" name="format-detection">
+		<!--移动端：手机端点击时，禁止出现灰色区域的方法 -->
+		<meta name="msapplication-tap-highlight" content="no">
+		<!--移动端：宽度为设备屏幕宽度；按实际尺寸显示，无任何缩放；禁止用户放大到实际尺寸之上； 禁止手动缩放-->
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<!--SEO优化  关键词  描述-->
+		<meta name="keywords" content="信用卡体系">
+		<meta name="description" content="信用卡体系">
+		<!--重置类样式css-->
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="./css/calendar.css" />
+		<style type="text/css">
+			#time>ul>li {
+				padding: 0 16px;
+				height: 42px;
+				line-height: 42px;
+				border-bottom: 1px solid #EEEEEE;
+				display: -webkit-flex;
+				display: flex;
+				align-items: center;
+			}
+			
+			#time>ul>.between {
+				justify-content: space-between;
+				font-size: 15px;
+			}
+			
+			#time>ul>li>.left {
+				font-size: 14px;
+				font-weight: bold;
+			}
+			
+			#time>ul>li>.right {
+				float: right;
+				color: #42B0FF;
+				position: relative;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="time">
+			<ul>
+				<li class="between"><span class="left">开始时间</span><span class="right timeSelect startTime"></span></li>
+				<li class="between"><span class="left">结束时间</span><span class="right timeSelect endTime"></span></li>
+			</ul>
+		</div>
+
+		<input type="" name="time" class="time" value="" />
+		<input type="" name="time" class="time" value="" />
+		<script type="text/javascript" src="./js/calendar.js"></script>
+		<script type="text/javascript">
+			var calendar = new Calendar({
+				"calendar": "timeSelect",
+				"startAndEnd": true
+			});
+		</script>
+	</body>
+
+</html>
